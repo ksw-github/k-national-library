@@ -38,25 +38,26 @@ div>div>*{
 } */
 
 /* model */
-.model_wrap{
+.modal_wrap{
   position: absolute;
   left: 50px;
   top: 50px;
   width: 400px;
   height: 300px;
   z-index: 2;
-  /* display: none; */
 }
-.model_content img{
+.modal_content img{
   vertical-align: top;
 }
-.model_footer{
+.modal_footer{
   padding: 5px 0;
   background-color: #000;
   color: #fff;
   text-align: right;
 }
-.model_footer a{
+.modal_footer .close{
+  background: transparent;
+  border: transparent;
   padding: 0 5px;
 }
 

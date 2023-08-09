@@ -7,16 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="model_wrap">
-    <div class="model_content">
+  <div class="modal_wrap">
+    <div class="modal_content">
       <a href="">
         <img src="img/viewImage-modal-popup.png" alt="이벤트">
       </a>
     </div>
-    <div class="model_footer">
+    <div class="modal_footer">
       <input type="checkbox" id="check_dont_see">
       <label for="check_dont_see">오늘 하루 보지 않기</label>
-      <a href="">닫기</a>
+      <button class="close">닫기</button>
     </div>
   </div>
 
@@ -576,5 +576,11 @@
         </div>
       </div>
   </footer>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script>
+    $(".modal_wrap").find(".close").on("click", function(){
+      $(".modal_wrap").css("display", "none");
+    });
+  </script>
 </body>
 </html>
